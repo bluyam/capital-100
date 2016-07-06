@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		21C061E31D2D5D7900260FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C061E21D2D5D7900260FAF /* AppDelegate.swift */; };
-		21C061E51D2D5D7900260FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C061E41D2D5D7900260FAF /* ViewController.swift */; };
 		21C061E81D2D5D7900260FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C061E61D2D5D7900260FAF /* Main.storyboard */; };
 		21C061EA1D2D5D7900260FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21C061E91D2D5D7900260FAF /* Assets.xcassets */; };
 		21C061ED1D2D5D7900260FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C061EB1D2D5D7900260FAF /* LaunchScreen.storyboard */; };
+		21C061F51D2D735800260FAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C061F41D2D735800260FAF /* LoginViewController.swift */; };
+		21C061FB1D2D767000260FAF /* AssistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C061FA1D2D767000260FAF /* AssistanceViewController.swift */; };
+		21C061FD1D2D767A00260FAF /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C061FC1D2D767A00260FAF /* OrderViewController.swift */; };
+		21C061FF1D2D769200260FAF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C061FE1D2D769200260FAF /* SettingsViewController.swift */; };
+		21C062031D2D912800260FAF /* IssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C062021D2D912800260FAF /* IssueTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21C061DF1D2D5D7900260FAF /* capital💯.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "capital💯.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C061E21D2D5D7900260FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21C061E41D2D5D7900260FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21C061E71D2D5D7900260FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21C061E91D2D5D7900260FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21C061EC1D2D5D7900260FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21C061EE1D2D5D7900260FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21C061F41D2D735800260FAF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		21C061FA1D2D767000260FAF /* AssistanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistanceViewController.swift; sourceTree = "<group>"; };
+		21C061FC1D2D767A00260FAF /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		21C061FE1D2D769200260FAF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		21C062021D2D912800260FAF /* IssueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		21C061E11D2D5D7900260FAF /* capital💯 */ = {
 			isa = PBXGroup;
 			children = (
+				21C061F91D2D765F00260FAF /* API */,
+				21C061F81D2D761200260FAF /* Views */,
+				21C061F71D2D75D000260FAF /* Models */,
+				21C061F61D2D74FC00260FAF /* Controllers */,
 				21C061E21D2D5D7900260FAF /* AppDelegate.swift */,
-				21C061E41D2D5D7900260FAF /* ViewController.swift */,
 				21C061E61D2D5D7900260FAF /* Main.storyboard */,
 				21C061E91D2D5D7900260FAF /* Assets.xcassets */,
 				21C061EB1D2D5D7900260FAF /* LaunchScreen.storyboard */,
 				21C061EE1D2D5D7900260FAF /* Info.plist */,
 			);
 			path = "capital💯";
+			sourceTree = "<group>";
+		};
+		21C061F61D2D74FC00260FAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21C061F41D2D735800260FAF /* LoginViewController.swift */,
+				21C061FA1D2D767000260FAF /* AssistanceViewController.swift */,
+				21C061FC1D2D767A00260FAF /* OrderViewController.swift */,
+				21C061FE1D2D769200260FAF /* SettingsViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		21C061F71D2D75D000260FAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		21C061F81D2D761200260FAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21C062021D2D912800260FAF /* IssueTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		21C061F91D2D765F00260FAF /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21C061E51D2D5D7900260FAF /* ViewController.swift in Sources */,
+				21C061F51D2D735800260FAF /* LoginViewController.swift in Sources */,
 				21C061E31D2D5D7900260FAF /* AppDelegate.swift in Sources */,
+				21C061FB1D2D767000260FAF /* AssistanceViewController.swift in Sources */,
+				21C062031D2D912800260FAF /* IssueTableViewCell.swift in Sources */,
+				21C061FF1D2D769200260FAF /* SettingsViewController.swift in Sources */,
+				21C061FD1D2D767A00260FAF /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
