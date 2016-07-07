@@ -1,0 +1,6 @@
+framework module Pods_capital_ {
+  umbrella header "Pods-capital💯-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -19,6 +19,9 @@ class IssueTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        resolverImageView.clipsToBounds = true
+        resolverImageView.layer.cornerRadius = resolverImageView.frame.width/2
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
